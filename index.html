@@ -100,6 +100,53 @@
         </section>
 
         <section>
+            <h2>Product Information Accordion</h2>
+
+            <h3>CSS selector:</h3>
+            <p>.product-info-accordion</p>
+
+            <h3>Sample code:</h3>
+            <code> ;</code>
+
+            <h3>Rendered element:</h3>
+
+            <button class="product-info-accordion">Section 1</button>
+            <div class="product-info-panel">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="product-info-accordion">Section 2</button>
+            <div class="product-info-panel">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="product-info-accordion">Section 3</button>
+            <div class="product-info-panel">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <script>
+                var acc = document.getElementsByClassName("product-info-accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+
+
+
+        </section>
+
+        <section>
             <h2>CTA Button</h2>
 
             <h3>CSS selector:</h3>
@@ -132,6 +179,7 @@
                 <input type="text" id="text-input-field" placeholder="i.e. Sample Text">
             </form>
         </section>
+
 
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
