@@ -111,31 +111,19 @@ TEXT ELEMENTS -------------------
 /* Styling for heading levels */
 
 h1 {
+    font-size: 4rem;
     color: #3d70b2;
 }
 
-h2 {}
-
-h3 {}
-
-/* Styling for heading levels */
-
-p {}
-
-
-/* Styling for bulleted lists */
-
-ul {
-    padding: 1rem;
+h2 {
+    font-size: 2.75rem;
+    color: #2d73af;
 }
 
-
-/* Styling for numbered lists */
-
-ol {
-    padding: 1rem;
+h3 {
+    font-size: 1.75rem;
+    color: #2d73af;
 }
-
 
 /* 
 COMBINED ELEMENTS -------------------
@@ -240,7 +228,8 @@ COMBINED ELEMENTS -------------------
     transition: 0.4s;
 }
 
-.active, .product-info-accordion:hover {
+.active,
+.product-info-accordion:hover {
     background-color: #ccc;
 }
 
