@@ -44,13 +44,9 @@ INTERACTIVE ELEMENTS -------------------
 
 /* Styling for in-text link */
 
-.in-text-link {
+.in-text-link {}
 
-}
-
-.in-text-link:hover {
-
-}
+.in-text-link:hover {}
 
 
 /* Styling for the navigation button */
@@ -87,9 +83,9 @@ nav li {
     border-bottom: 2px solid black;
 }
 
-/* Styling for submit and reset buttons */
+/* Styling for cta buttons */
 
-.submit-reset-button {
+.cta-button {
     display: block;
     width: fit-content;
     text-decoration: none;
@@ -99,16 +95,13 @@ nav li {
     border: 1px solid black;
 }
 
-.submit-reset-button:hover {
-}
+.cta-button:hover {}
 
 /* Styling for text input field */
 
-.input-field-label {
-}
+.input-field-label {}
 
-#text-input-field {
-}
+#text-input-field {}
 
 
 /* 
@@ -117,19 +110,15 @@ TEXT ELEMENTS -------------------
 
 /* Styling for heading levels */
 
-h1 {
-}
+h1 {}
 
-h2 {
-}
+h2 {}
 
-h3 {
-}
+h3 {}
 
 /* Styling for heading levels */
 
-p {
-}
+p {}
 
 
 /* Styling for bulleted lists */
@@ -152,7 +141,8 @@ COMBINED ELEMENTS -------------------
 
 /* Styling for main nav */
 
-#main-nav, #main-nav ul {
+#main-nav,
+#main-nav ul {
     display: inline-flex;
     width: 100%;
 }
@@ -162,8 +152,7 @@ COMBINED ELEMENTS -------------------
     text-align: center;
 }
 
-#main-nav li:nth-child(3) {
-}
+#main-nav li:nth-child(3) {}
 
 /* Styling for product listing */
 
@@ -223,16 +212,52 @@ COMBINED ELEMENTS -------------------
     border: 1px solid black;
 }
 
-#color1 {
-}
+#color1 {}
 
-#color2 {
-}
+#color2 {}
 
-#color3 {
-}
+#color3 {}
 
 /* Citations styling */
-#citations p{
+
+#citations p {
     line-height: 2rem;
+}
+
+
+.product-info-accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .product-info-accordion:hover {
+    background-color: #ccc;
+}
+
+.product-info-accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.product-info-panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
