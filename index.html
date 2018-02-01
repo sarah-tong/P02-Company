@@ -1,63 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <title>P02 - Company</title>
+    <meta charset="utf-8">
+    <title>P02 - Company</title>
 
-        <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <h1>IAT 339: P02</h1>
-        <h2>Style Guide</h2>
+    <h1>IAT 339: P02</h1>
+    <h2>Style Guide</h2>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="button-nav">Style Guide</a>
-                </li>
-                <li>
-                    <a href="sitemap.html" class="button-nav">Sitemap</a>
-                </li>
-                <li>
-                    <a href="user_flows.html" class="button-nav">Preliminary User Flows</a>
-                </li>
-                <li>
-                    <a href="citations.html" class="button-nav">Citations</a>
-                </li>
-            </ul>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="button-nav">Style Guide</a>
+            </li>
+            <li>
+                <a href="sitemap.html" class="button-nav">Sitemap</a>
+            </li>
+            <li>
+                <a href="user_flows.html" class="button-nav">Preliminary User Flows</a>
+            </li>
+            <li>
+                <a href="citations.html" class="button-nav">Citations</a>
+            </li>
+        </ul>
 
-        </nav>
+    </nav>
 
-        <!-- INTERACTIVE ELEMENTS SECTION // -->
-        <section id="interactive_elements">
+    <section id="information">
+        <h2>About Carbon </h2>
 
-            <!-- Default Button styling section -->
-            <section>
-                <h2>In-text link</h2>
+        <p>Name: carbon computers </p>
+        <p>Website: <a href="www.carbon.co"> www.carbon.co </a> </p>
+        <p>Industry: Consumer Technology, Personal Computing</p>
+        <p>Company Personality: Technical + Friendly Layperson</p>
+        <p>Customer Segment:</p>
+        <ul>
+            <li> Primary - People who enjoy games but lack the knowledge of component selection, building a computer, or hardware performance </li>
 
-                <h3>CSS selector:</h3>
-                <p>.in-text-link</p>
+            <li> Secondary - People buying for others; don't know/care for the details, just roughly know what kind of games the computer is meant for </li>
 
-                <h3>Sample code:</h3>
-                <code>&lt;a href="#" class="in-text-link"&gt;In-text link&lt;/a&gt;</code>
+            <li> Tertiary - Enthusiasts that have the indepth technical knowledge, but lack the time or care to build a system </li>
+        </ul>
 
-                <h3>Rendered element:</h3>
-                <a class="in-text-link" href="#">In-text link</a>
-            </section>
+        <p> Value Proposition </p>
+        <ul>
+            <li>Providing systems not based solely around specs, but offer/suggest its capabilities in experiences; games, workloads, etc. </li>
+        </ul>
+    </section>
 
-            <section>
-                <h2>Navigation Button</h2>
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
 
-                <h3>CSS selector:</h3>
-                <p>.button-nav</p>
+        <!-- Default Button styling section -->
+        <section>
+            <h2>In-text link</h2>
 
-                <h3>Sample code:</h3>
-                <code>
+            <h3>CSS selector:</h3>
+            <p>.in-text-link</p>
+
+            <h3>Sample code:</h3>
+            <code>&lt;a href="#" class="in-text-link"&gt;In-text link&lt;/a&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <a class="in-text-link" href="#">In-text link</a>
+        </section>
+
+        <section>
+            <h2>Navigation Button</h2>
+
+            <h3>CSS selector:</h3>
+            <p>.button-nav</p>
+
+            <h3>Sample code:</h3>
+            <code>
                     &lt;nav&gt; <br>
                     &nbsp;&lt;ul&gt; <br>
                     &nbsp;&nbsp;&lt;li&gt; <br>
@@ -67,116 +89,116 @@
                     &lt;/nav&gt;
                 </code>
 
-                <h3>Rendered element:</h3>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#" class="button-nav">Navigation Button</a>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
+            <h3>Rendered element:</h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="button-nav">Navigation Button</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
 
-            <section>
-                <h2>Submit/Reset Buttons</h2>
+        <section>
+            <h2>CTA Button</h2>
 
-                <h3>CSS selector:</h3>
-                <p>.submit-reset-button</p>
+            <h3>CSS selector:</h3>
+            <p>.submit-reset-button</p>
 
-                <h3>Sample code:</h3>
-                <code>&lt;a href="#" class="submit-reset-button"&gt;Submit/Reset Button&lt;/a&gt;</code>
+            <h3>Sample code:</h3>
+            <code>&lt;a href="#" class="submit-reset-button"&gt;Submit/Reset Button&lt;/a&gt;</code>
 
-                <h3>Rendered element:</h3>
-                <a class="submit-reset-button" href="#">Submit/Reset Button</a>
-            </section>
+            <h3>Rendered element:</h3>
+            <a class="submit-reset-button" href="#">Submit/Reset Button</a>
+        </section>
 
-            <section>
-                <h2>Text Input Field</h2>
+        <section>
+            <h2>Text Input Field</h2>
 
-                <h3>CSS selector:</h3>
-                <p>#text-input-field, .input-field-label</p>
+            <h3>CSS selector:</h3>
+            <p>#text-input-field, .input-field-label</p>
 
-                <h3>Sample code:</h3>
-                <code>
+            <h3>Sample code:</h3>
+            <code>
                     &lt;form&gt;<br>
                     &nbsp;&lt;label for="text-input-field" class="input-field-label"&gt;Subject:&lt;/label&gt;<br>
                     &nbsp;&lt;input type="text" id="text-input-field" placeholder="i.e. Text Sample"&gt;<br>
                     &lt;/form&gt;
                 </code>
 
-                <h3>Rendered element:</h3>
-                <form>
-                    <label for="text-input-field" class="input-field-label">Subject:</label>
-                    <input type="text" id="text-input-field" placeholder="i.e. Sample Text">
-                </form>
-            </section>
-
+            <h3>Rendered element:</h3>
+            <form>
+                <label for="text-input-field" class="input-field-label">Subject:</label>
+                <input type="text" id="text-input-field" placeholder="i.e. Sample Text">
+            </form>
         </section>
-        <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
 
-        <!-- TEXT ELEMENTS SECTION // -->
-        <section id="text_elements">
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
 
-            <section>
-                <h2>Headings</h2>
+        <section>
+            <h2>Headings</h2>
 
-                <div class="heading-wrapper">
-                    <h3>CSS selector for Heading 1:</h3>
-                    <p>h1</p>
-
-                    <h3>Sample code:</h3>
-                    <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
-
-                    <h3>Rendered element:</h3>
-                    <h1>Heading 1</h1>
-                </div>
-
-                <div class="heading-wrapper">
-                    <h3>CSS selector for Heading 2:</h3>
-                    <p>h2</p>
-
-                    <h3>Sample code:</h3>
-                    <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
-
-                    <h3>Rendered element:</h3>
-                    <h2>Heading 2</h2>
-                </div>
-
-                <div class="heading-wrapper">
-                    <h3>CSS selector for Heading 3:</h3>
-                    <p>h3</p>
-
-                    <h3>Sample code:</h3>
-                    <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
-
-                    <h3>Rendered element:</h3>
-                    <h3>Heading 3</h3>
-                </div>
-            </section>
-
-            <section>
-                <h2>Paragraphs</h2>
-
-                <h3>CSS selector:</h3>
-                <p>p</p>
+            <div class="heading-wrapper">
+                <h3>CSS selector for Heading 1:</h3>
+                <p>h1</p>
 
                 <h3>Sample code:</h3>
-                <code>&lt;p&gt;Paragraph&lt;/p&gt;</code>
+                <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
 
                 <h3>Rendered element:</h3>
-                <p>Paragraph</p>
-            </section>
+                <h1>Heading 1</h1>
+            </div>
 
-            <section>
-                <h2>Bulleted Lists</h2>
-
-                <h3>CSS selector:</h3>
-                <p>ul</p>
+            <div class="heading-wrapper">
+                <h3>CSS selector for Heading 2:</h3>
+                <p>h2</p>
 
                 <h3>Sample code:</h3>
-                <code>
+                <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <h2>Heading 2</h2>
+            </div>
+
+            <div class="heading-wrapper">
+                <h3>CSS selector for Heading 3:</h3>
+                <p>h3</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <h3>Heading 3</h3>
+            </div>
+        </section>
+
+        <section>
+            <h2>Paragraphs</h2>
+
+            <h3>CSS selector:</h3>
+            <p>p</p>
+
+            <h3>Sample code:</h3>
+            <code>&lt;p&gt;Paragraph&lt;/p&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <p>Paragraph</p>
+        </section>
+
+        <section>
+            <h2>Bulleted Lists</h2>
+
+            <h3>CSS selector:</h3>
+            <p>ul</p>
+
+            <h3>Sample code:</h3>
+            <code>
                     &lt;ul&gt;<br>
                     &nbsp;&lt;li&gt;Bullet list 1&lt;/li&gt;<br>
                     &nbsp;&lt;li&gt;Bullet list 2&lt;/li&gt;<br>
@@ -184,22 +206,22 @@
                     &lt;/ul&gt;<br>
                 </code>
 
-                <h3>Rendered element:</h3>
-                <ul>
-                    <li>Bullet list 1</li>
-                    <li>Bullet list 2</li>
-                    <li>Bullet list 3</li>
-                </ul>
-            </section>
+            <h3>Rendered element:</h3>
+            <ul>
+                <li>Bullet list 1</li>
+                <li>Bullet list 2</li>
+                <li>Bullet list 3</li>
+            </ul>
+        </section>
 
-            <section>
-                <h2>Numbered Lists</h2>
+        <section>
+            <h2>Numbered Lists</h2>
 
-                <h3>CSS selector:</h3>
-                <p>ol</p>
+            <h3>CSS selector:</h3>
+            <p>ol</p>
 
-                <h3>Sample code:</h3>
-                <code>
+            <h3>Sample code:</h3>
+            <code>
                     &lt;ol&gt;<br>
                     &nbsp;&lt;li&gt;Bullet list 1&lt;/li&gt;<br>
                     &nbsp;&lt;li&gt;Bullet list 2&lt;/li&gt;<br>
@@ -207,77 +229,77 @@
                     &lt;/ol&gt;
                 </code>
 
-                <h3>Rendered element:</h3>
-                <ol>
-                    <li>Numbered list 1</li>
-                    <li>Numbered list 2</li>
-                    <li>Numbered list 3</li>
-                </ol>
-            </section>
+            <h3>Rendered element:</h3>
+            <ol>
+                <li>Numbered list 1</li>
+                <li>Numbered list 2</li>
+                <li>Numbered list 3</li>
+            </ol>
+        </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+        <section>
+            <h2>Main Navigation</h2>
+
+            <nav id="main-nav">
+            </nav>
+        </section>
+
+        <section>
+            <h2>Product Listing</h2>
+
+            <h3>Rendered element:</h3>
+            <div class="product-listing">
+                <img src="#" alt="product image">
+                <div class="product-detail"></div>
+            </div>
 
         </section>
-        <!-- // TEXT ELEMENTS SECTION -->
 
+        <section>
+            <h2>Website Grid Structure</h2>
 
-        <!-- COMBINED ELEMENTS SECTION // -->
-        <section id="combined_elements">
-
-            <section>
-                <h2>Main Navigation</h2>
-
-                <nav id="main-nav">
-                </nav>
-            </section>
-
-            <section>
-                <h2>Product Listing</h2>
-
-                <h3>Rendered element:</h3>
-                <div class="product-listing">
-                    <img src="#" alt="product image">
-                    <div class="product-detail"></div>
-                </div>
-
-            </section>
-
-            <section>
-                <h2>Website Grid Structure</h2>
-
-                <div class="grid-wrapper">
-                    <div class="column-1-of-3">
-                        <img class="placeholder" src="img/placeholder.png" alt="placeholder image 1">
-                        <div class="product-detail">
-                        </div>
-                    </div>
-
-                    <div class="column-1-of-3">
-                        <img class="placeholder" src="img/placeholder.png" alt="placeholder image 1">
-                        <div class="product-detail">
-                        </div>
-                    </div>
-
-                    <div class="column-1-of-3">
-                        <img class="placeholder" src="img/placeholder.png" alt="placeholder image 1">
-                        <div class="product-detail">
-                        </div>
+            <div class="grid-wrapper">
+                <div class="column-1-of-3">
+                    <img class="placeholder" src="img/placeholder.png" alt="placeholder image 1">
+                    <div class="product-detail">
                     </div>
                 </div>
 
-                <p>Note: Grid structure for the product listings page.</p>
+                <div class="column-1-of-3">
+                    <img class="placeholder" src="img/placeholder.png" alt="placeholder image 1">
+                    <div class="product-detail">
+                    </div>
+                </div>
 
-            </section>
+                <div class="column-1-of-3">
+                    <img class="placeholder" src="img/placeholder.png" alt="placeholder image 1">
+                    <div class="product-detail">
+                    </div>
+                </div>
+            </div>
 
-            <section>
-                <h2>Website Colour Swatches</h2>
-                <div class="colour-swatch" id="color1"></div>
-                <div class="colour-swatch" id="color2"></div>
-                <div class="colour-swatch" id="color3"></div>
-            </section>
+            <p>Note: Grid structure for the product listings page.</p>
 
         </section>
-        <!-- // COMBINED ELEMENTS SECTION -->
+
+        <section>
+            <h2>Website Colour Swatches</h2>
+            <div class="colour-swatch" id="color1"></div>
+            <div class="colour-swatch" id="color2"></div>
+            <div class="colour-swatch" id="color3"></div>
+        </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
 
 
-    </body>
+</body>
 
 </html>
