@@ -87,9 +87,9 @@ nav li {
     border-bottom: 2px solid black;
 }
 
-/* Styling for submit and reset buttons */
+/* Styling for cta buttons */
 
-.submit-reset-button {
+.cta-button {
     display: block;
     width: fit-content;
     text-decoration: none;
@@ -99,7 +99,7 @@ nav li {
     border: 1px solid black;
 }
 
-.submit-reset-button:hover {
+.cta-button:hover {
 }
 
 /* Styling for text input field */
