@@ -44,9 +44,16 @@ INTERACTIVE ELEMENTS -------------------
 
 /* Styling for in-text link */
 
-.in-text-link {}
+.in-text-link {
+    text-decoration: none;
+    color: #3763E4;
+    transition: color 0.5s;
+}
 
-.in-text-link:hover {}
+.in-text-link:hover {
+    color: #899da3;
+    font-weight: 700;
+}
 
 
 /* Styling for the navigation button */
@@ -85,19 +92,46 @@ nav li {
     border-bottom: 2px solid white;
 }
 
+/* Styling for Product Information Accordian */
+
+code span{
+    display: block;
+    height: 1rem;
+}
+
 /* Styling for cta buttons */
 
 .cta-button {
-    display: block;
-    width: fit-content;
+    position: relative;
+    display: inline-block;
     text-decoration: none;
+    font-weight: 700;
     letter-spacing: 0.0625rem;
     padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid black;
+    color: #102c34;
+    border: 2px solid #102c34;
 }
 
-.cta-button:hover {}
+.cta-button:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #000;
+    transition: height 0.3s;
+}
+
+.cta-button:hover {
+    color: #fff;
+}
+
+.cta-button:hover:after {
+    top: 0;
+    height: 100%;
+}
 
 /* Styling for text input field */
 
@@ -202,7 +236,14 @@ COMBINED ELEMENTS -------------------
     display: inline-block;
     height: 4rem;
     width: 4rem;
-    border: 1px solid black;
+}
+
+#dark-grey {
+    background-color: #102c34;
+}
+
+#mid-grey {
+    background-color: #899da3;
 }
 
 #vivid-blue {
