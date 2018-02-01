@@ -4,7 +4,7 @@ Default styling for the style guide
 */
 
 body {
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     padding: 2rem;
 }
 
@@ -110,7 +110,9 @@ TEXT ELEMENTS -------------------
 
 /* Styling for heading levels */
 
-h1 {}
+h1 {
+    color: #3d70b2;
+}
 
 h2 {}
 
