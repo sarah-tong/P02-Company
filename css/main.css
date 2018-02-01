@@ -100,7 +100,7 @@ code span {
 }
 
 .product-info-accordion {
-    background-color: #2d73af;
+    background-color: #4B83AD;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -109,7 +109,7 @@ code span {
     text-align: left;
     outline: none;
     font-size: 15px;
-    transition: color 0.5s, background-color 0.5s;
+    transition: color 0.75s, background-color 0.75s;
 }
 
 .active,
@@ -150,8 +150,8 @@ code span {
     font-weight: 700;
     letter-spacing: 0.0625rem;
     padding: 0.5rem;
-    color: #102c34;
-    border: 2px solid #102c34;
+    color: #3763E4;
+    border: 2px solid #3763E4;
 }
 
 .cta-button:after {
@@ -162,7 +162,7 @@ code span {
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: #000;
+    background: #3763E4;
     transition: height 0.3s;
 }
 
@@ -210,7 +210,7 @@ h2 {
 
 h3 {
     font-size: 1.75rem;
-    color: black;
+    color: #102c34;
     font-weight: 100;
 }
 
@@ -244,12 +244,19 @@ COMBINED ELEMENTS -------------------
 /* Styling for product listing */
 
 .product-listing {
+    position: relative;
     display: block;
-    width: 30%;
+    width: 15rem;
 }
 
 .product-listing img {
     width: 100%;
+    opacity: 0.25;
+    transition: opacity 0.5s;
+}
+
+.product-listing img:hover {
+    opacity: 1;
 }
 
 .product-detail {
@@ -257,12 +264,26 @@ COMBINED ELEMENTS -------------------
     width: 100%;
 }
 
-.product-detail h3 {
+.product-detail h3, .product-detail p {
     flex: 1 0 auto;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    left: 2.25rem;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: max-content;
+    height: fit-content;
+    text-shadow: 2px 2px #102c34;
 }
 
-.product-listing h3:last-child {
-    text-align: right;
+.product-detail h3 {
+    top: -5rem;
+}
+
+.product-detail p {
+    top: -1rem;
 }
 
 /* Website grid */
@@ -274,13 +295,9 @@ COMBINED ELEMENTS -------------------
     flex-wrap: wrap;
 }
 
-.column-1-of-3 {
-    flex: 0 1 30%;
+.column-1-of-4 {
+    flex: 0 0 15rem;
     margin: 0 1rem;
-}
-
-.column-1-of-3 h3:nth-child(2) {
-    text-align: right;
 }
 
 .placeholder {
@@ -296,9 +313,14 @@ COMBINED ELEMENTS -------------------
     display: inline-block;
     height: 4rem;
     width: 4rem;
+    border: 1px solid #899da3;
 }
 
-#dark-grey {
+#black {
+    background-color: black;
+}
+
+#super-dark-grey {
     background-color: #102c34;
 }
 
@@ -306,17 +328,17 @@ COMBINED ELEMENTS -------------------
     background-color: #899da3;
 }
 
+#white {
+    background-color: white;
+}
+
 #dull-blue {
-    background-color: #2d73af;
+    background-color: #4B83AD;
 }
 
 #vivid-blue {
     background-color: #3763E4;
 }
-
-#color2 {}
-
-#color3 {}
 
 /* Citations styling */
 
