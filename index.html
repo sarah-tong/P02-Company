@@ -106,7 +106,22 @@
                 <p>.product-info-accordion</p>
 
                 <h3>Sample code:</h3>
-                <code> ;</code>
+                <code>
+                    &lt;button class="product-info-accordion">Section 1&lt;/button&gt;<br>
+                    &lt;div class="product-info-panel"&gt;<br>
+                    &nbsp;&lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>
+                    &lt;/div&gt;<br>
+                    <span></span>
+                    &lt;button class="product-info-accordion"&gt;Section 2&lt;/button&gt;<br>
+                    &lt;div class="product-info-panel"&gt;<br>
+                    &nbsp;&lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>
+                    &lt;/div&gt;<br>
+                    <span></span>
+                    &lt;button class="product-info-accordion"&gt;Section 3&lt;/button&gt;<br>
+                    &lt;div class="product-info-panel"&gt;<br>
+                    &nbsp;&lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>
+                    &lt;/div&gt;<br>
+                </code>
 
                 <h3>Rendered element:</h3>
 
@@ -124,26 +139,6 @@
                 <div class="product-info-panel">
                     <p>Lorem ipsum...</p>
                 </div>
-
-                <script>
-                    var acc = document.getElementsByClassName("product-info-accordion");
-                    var i;
-
-                    for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("click", function() {
-                            this.classList.toggle("active");
-                            var panel = this.nextElementSibling;
-                            if (panel.style.maxHeight) {
-                                panel.style.maxHeight = null;
-                            } else {
-                                panel.style.maxHeight = panel.scrollHeight + "px";
-                            }
-                        });
-                    }
-                </script>
-
-
-
             </section>
 
             <section>
@@ -156,7 +151,7 @@
                 <code>&lt;a href="#" class="cta-button"&gt;CTA Button&lt;/a&gt;</code>
 
                 <h3>Rendered element:</h3>
-                <a class="submit-reset-button" href="#">CTA Button</a>
+                <a class="cta-button" href="#">CTA Button</a>
             </section>
 
             <section>
@@ -341,18 +336,18 @@
                 <h2>Website Colour Swatches</h2>
                 <div id="palette 1">
                     <h3>Palette 01</h3>
-                    <div class="colour-swatch" id="color1"></div>
-                    <div class="colour-swatch" id="color2"></div>
+                    <div class="colour-swatch" id="dark-grey"></div>
+                    <div class="colour-swatch" id="mid-grey"></div>
                     <div class="colour-swatch" id="color3"></div>
                 </div>
-                
+
                 <div id="palette 2">
                     <h3>Palette 02</h3>
                     <div class="colour-swatch" id="color1"></div>
                     <div class="colour-swatch" id="color2"></div>
                     <div class="colour-swatch" id="vivid-blue"></div>
                 </div>
-                
+
                 <div id="palette 3">
                     <h3>Palette 03</h3>
                     <div class="colour-swatch" id="color1"></div>
@@ -364,7 +359,23 @@
         </section>
         <!-- // COMBINED ELEMENTS SECTION -->
 
+        <!-- JavaScript for Product Information Accordian -->
+        <script>
+            var acc = document.getElementsByClassName("product-info-accordion");
+            var i;
 
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
     </body>
 
 </html>
