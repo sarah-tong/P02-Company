@@ -6,6 +6,8 @@ Default styling for the style guide
 body {
     font-family: 'Source Sans Pro', sans-serif;
     padding: 2rem;
+    background-color: #eaf1f7;
+
 }
 
 section:not([id]) {
@@ -46,7 +48,7 @@ INTERACTIVE ELEMENTS -------------------
 
 .in-text-link {
     text-decoration: none;
-    color: #3763E4;
+    color: #3057D5;
     transition: color 0.5s;
 }
 
@@ -66,7 +68,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin: 0;
-    background: #3763E4;
+    background: #3057D5;
     padding: 1rem;
 }
 
@@ -114,7 +116,7 @@ code span {
 
 .active,
 .product-info-accordion:hover {
-    background-color: #3763E4;
+    background-color: #3057D5;
 }
 
 .product-info-accordion:after {
@@ -150,8 +152,8 @@ code span {
     font-weight: 700;
     letter-spacing: 0.0625rem;
     padding: 0.5rem;
-    color: #3763E4;
-    border: 2px solid #3763E4;
+    color: #3057D5;
+    border: 2px solid #3057D5;
 }
 
 .cta-button:after {
@@ -162,7 +164,7 @@ code span {
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: #3763E4;
+    background: #3057D5;
     transition: height 0.3s;
 }
 
@@ -200,12 +202,12 @@ TEXT ELEMENTS -------------------
 
 h1 {
     font-size: 4rem;
-    color: #3763E4;
+    color: #3057D5;
 }
 
 h2 {
     font-size: 2.75rem;
-    color: #3763E4;
+    color: #3057D5;
 }
 
 h3 {
@@ -328,6 +330,10 @@ COMBINED ELEMENTS -------------------
     background-color: #899da3;
 }
 
+#light-grey {
+    background-color: #eaf1f7;
+}
+
 #white {
     background-color: white;
 }
@@ -337,7 +343,7 @@ COMBINED ELEMENTS -------------------
 }
 
 #vivid-blue {
-    background-color: #3763E4;
+    background-color: #3057D5;
 }
 
 /* Citations styling */
