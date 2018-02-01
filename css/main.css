@@ -59,6 +59,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin: 0;
+    background: #3763E4;
     padding: 1rem;
 }
 
@@ -69,6 +70,7 @@ nav li {
     letter-spacing: 0.0625rem;
     text-align: center;
     text-decoration: none;
+    color: white;
     -webkit-transition: background-color 0.5s;
     transition: background-color 0.5s;
     padding: 0;
@@ -80,7 +82,7 @@ nav li {
     width: 100%;
     left: 0;
     bottom: -0.25rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 
 /* Styling for cta buttons */
@@ -112,17 +114,18 @@ TEXT ELEMENTS -------------------
 
 h1 {
     font-size: 4rem;
-    color: #3d70b2;
+    color: #3763E4;
 }
 
 h2 {
     font-size: 2.75rem;
-    color: #2d73af;
+    color: #3763E4;
 }
 
 h3 {
     font-size: 1.75rem;
-    color: #2d73af;
+    color: black;
+    font-weight: 100;
 }
 
 /* 
@@ -202,7 +205,9 @@ COMBINED ELEMENTS -------------------
     border: 1px solid black;
 }
 
-#color1 {}
+#vivid-blue {
+    background-color: #3763E4;
+}
 
 #color2 {}
 
