@@ -6,6 +6,8 @@ Default styling for the style guide
 body {
     font-family: 'Source Sans Pro', sans-serif;
     padding: 2rem;
+    background-color: #eaf1f7;
+
 }
 
 section:not([id]) {
@@ -44,9 +46,16 @@ INTERACTIVE ELEMENTS -------------------
 
 /* Styling for in-text link */
 
-.in-text-link {}
+.in-text-link {
+    text-decoration: none;
+    color: #3057D5;
+    transition: color 0.5s;
+}
 
-.in-text-link:hover {}
+.in-text-link:hover {
+    color: #899da3;
+    font-weight: 700;
+}
 
 
 /* Styling for the navigation button */
@@ -59,6 +68,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin: 0;
+    background: #3057D5;
     padding: 1rem;
 }
 
@@ -69,6 +79,7 @@ nav li {
     letter-spacing: 0.0625rem;
     text-align: center;
     text-decoration: none;
+    color: white;
     -webkit-transition: background-color 0.5s;
     transition: background-color 0.5s;
     padding: 0;
@@ -80,28 +91,107 @@ nav li {
     width: 100%;
     left: 0;
     bottom: -0.25rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
+
+/* Styling for Product Information Accordian */
+
+code span {
+    display: block;
+    height: 1rem;
+}
+
+.product-info-accordion {
+    background-color: #4B83AD;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: color 0.75s, background-color 0.75s;
+}
+
+.active,
+.product-info-accordion:hover {
+    background-color: #3057D5;
+}
+
+.product-info-accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.product-info-panel {
+    padding: 0 1.125rem;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.product-info-panel p {
+    padding: 1rem 0;
+}
+
 
 /* Styling for cta buttons */
 
 .cta-button {
-    display: block;
-    width: fit-content;
+    position: relative;
+    display: inline-block;
     text-decoration: none;
+    font-weight: 700;
     letter-spacing: 0.0625rem;
     padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid black;
+    color: #3057D5;
+    border: 2px solid #3057D5;
 }
 
-.cta-button:hover {}
+.cta-button:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #3057D5;
+    transition: height 0.3s;
+}
+
+.cta-button:hover {
+    color: #fff;
+}
+
+.cta-button:hover:after {
+    top: 0;
+    height: 100%;
+}
 
 /* Styling for text input field */
 
-.input-field-label {}
+.input-field-label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
 
-#text-input-field {}
+#text-input-field {
+    display: block;
+    font-size: 1rem;
+    padding: 0.15rem;
+    border: 1px solid;
+    color: #899da3;
+}
 
 
 /* 
@@ -111,31 +201,26 @@ TEXT ELEMENTS -------------------
 /* Styling for heading levels */
 
 h1 {
-    color: #3d70b2;
+    font-size: 4rem;
+    color: #3057D5;
 }
 
-h2 {}
+h2 {
+    font-size: 2.75rem;
+    color: #3057D5;
+}
 
-h3 {}
-
-/* Styling for heading levels */
-
-p {}
-
+h3 {
+    font-size: 1.75rem;
+    color: #102c34;
+    font-weight: 100;
+}
 
 /* Styling for bulleted lists */
 
 ul {
-    padding: 1rem;
+    list-style: square;
 }
-
-
-/* Styling for numbered lists */
-
-ol {
-    padding: 1rem;
-}
-
 
 /* 
 COMBINED ELEMENTS -------------------
@@ -150,21 +235,30 @@ COMBINED ELEMENTS -------------------
 }
 
 #main-nav li {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     text-align: center;
 }
 
-#main-nav li:nth-child(3) {}
+#main-nav li:nth-child(4) {
+    flex: 50 0 auto;
+}
 
 /* Styling for product listing */
 
 .product-listing {
+    position: relative;
     display: block;
-    width: 30%;
+    width: 22%;
 }
 
 .product-listing img {
     width: 100%;
+    opacity: 0.25;
+    transition: opacity 0.5s;
+}
+
+.product-listing img:hover {
+    opacity: 1;
 }
 
 .product-detail {
@@ -172,12 +266,25 @@ COMBINED ELEMENTS -------------------
     width: 100%;
 }
 
-.product-detail h3 {
+.product-detail h3, .product-detail p {
     flex: 1 0 auto;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    left: 0rem;
+    margin: auto;
+    text-align: center;
+    width: max-content;
+    height: fit-content;
+    text-shadow: 2px 2px #102c34;
 }
 
-.product-listing h3:last-child {
-    text-align: right;
+.product-detail h3 {
+    top: 0rem;
+}
+
+.product-detail p {
+    top: 2.5rem;
 }
 
 /* Website grid */
@@ -189,13 +296,9 @@ COMBINED ELEMENTS -------------------
     flex-wrap: wrap;
 }
 
-.column-1-of-3 {
-    flex: 0 1 30%;
-    margin: 0 1rem;
-}
-
-.column-1-of-3 h3:nth-child(2) {
-    text-align: right;
+.column-1-of-4 {
+    flex: 0 1 22%;
+    margin-right: 2rem;
 }
 
 .placeholder {
@@ -211,55 +314,39 @@ COMBINED ELEMENTS -------------------
     display: inline-block;
     height: 4rem;
     width: 4rem;
-    border: 1px solid black;
+    border: 1px solid #899da3;
 }
 
-#color1 {}
+#black {
+    background-color: black;
+}
 
-#color2 {}
+#super-dark-grey {
+    background-color: #102c34;
+}
 
-#color3 {}
+#mid-grey {
+    background-color: #899da3;
+}
+
+#light-grey {
+    background-color: #eaf1f7;
+}
+
+#white {
+    background-color: white;
+}
+
+#dull-blue {
+    background-color: #4B83AD;
+}
+
+#vivid-blue {
+    background-color: #3057D5;
+}
 
 /* Citations styling */
 
 #citations p {
     line-height: 2rem;
-}
-
-
-.product-info-accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-.active, .product-info-accordion:hover {
-    background-color: #ccc;
-}
-
-.product-info-accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2212";
-}
-
-.product-info-panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
 }
